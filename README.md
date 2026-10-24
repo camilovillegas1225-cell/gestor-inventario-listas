@@ -26,3 +26,7 @@ No se permiten producto ya agregados en el inventario para que no se confunda el
 # Funciones implementadas
 
 se implementaron 4 funciones las cuales son: 1. opciones de menu que es el cuando el programa le pide al usuaripo que ingrese un digito numerico pero entero sino lo vuelve a pedir hasta que sea correcto, 2. actualizacion de producto el cual escoje primero el producto que deseas cambiar buscandolo por toda la lista y luego hace la accion pero sino existe salta un aviso, 3. resumen de invetario el cual muestra todo el inventarion  con los productos y cantidades pero si se ejecuta antes de haber ingresado algun dato salta un aviso, 4. opcion o dato correcto del producto asiendo que cuando se ingrese un dato o opcion numerico sea correcto, no una letra o un valor negativo.
+
+# AUTOR
+
+Duvan Camilo Villegas Salamanca en Ingenieria de Software
