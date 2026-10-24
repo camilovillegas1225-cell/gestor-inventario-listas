@@ -1,58 +1,28 @@
-# Gestor de inventario con listas
+# Objetivo de getor de inventario
 
-## Objetivo
+Ayudar a una pequeña tienda con su inventario de productos para que los puedan: agregar, eliminar, actualizar y mostrar ante ellos.
 
-Programa de consola en Python que permite a una tienda pequeña administrar los nombres y las cantidades disponibles de sus productos, practicando el manejo de listas, índices, ciclos, condicionales y funciones.
+# Requisitos para ejecutar
 
-## Requisitos para ejecutar
+Tener un dispositivo adecuado para la realizacion del programa.
+Tener Python 3 intalado.
+Tener conocimiento y experiencia con el lenguaje para crearlo.
 
-- Python 3 instalado.
-- No requiere librerías externas, archivos ni bases de datos.
+# Instrucciones y uso
 
-## Instrucciones de uso
+1. Abra la terminal del archivo del programa
+2. Ejecutelo el cual se llama " main.py "
+3. Escoja las opciones establecidas que aparecen en el menu
+4. Al colocar una opcion erronea tendra que volver a colocar una opcion valida
 
-1. Descargue o clone el repositorio.
-2. Abra una terminal en la carpeta del proyecto.
-3. Ejecute:
+# Como se usan las listas
 
-```
-python main.py
-```
+Se utilizaron dos listas una llama productos y la otra cantidades, el indice llamado i pertenece al mismo producto que se va agregando a la lista para que este sincronizadas y cuando alla y cambio se cambien ambas.
 
-4. Elija una opción del menú escribiendo su número y presionando Enter.
+# Decicion sobre productos repetidos
 
-Los datos se guardan solo mientras el programa está abierto; se pierden al cerrarlo.
+No se permiten producto ya agregados en el inventario para que no se confunda el programa y las listas puedan escojer el producto indicado.
 
-## Funciones implementadas
+# Funciones implementadas
 
-| Opción | Función | Descripción |
-|---|---|---|
-| 1 | `registrar_producto()` | Registra un producto y su cantidad disponible. |
-| 2 | `mostrar_inventario()` | Muestra todos los productos con su cantidad. |
-| 3 | `buscar_producto()` | Busca un producto por su nombre. |
-| 4 | `modificar_cantidad()` | Modifica la cantidad de un producto existente. |
-| 5 | `eliminar_producto()` | Elimina un producto existente. |
-| 6 | `mostrar_resumen()` | Muestra cuántos productos diferentes hay registrados. |
-| 7 | `mostrar_mayor_cantidad()` | Muestra el producto con mayor cantidad disponible. |
-| 8 | — | Sale del programa. |
-
-Funciones de apoyo: `leer_cantidad()` (valida que la cantidad sea un entero no negativo), `buscar_indice()` (devuelve la posición de un producto o -1 si no existe) y `mostrar_menu()`.
-
-## Cómo se usan las listas
-
-El programa usa dos listas paralelas: `productos` y `cantidades`. El elemento en el índice `i` de cada lista corresponde al mismo producto. Por ejemplo, `productos[0]` y `cantidades[0]` describen el mismo producto. Al eliminar, se quita el mismo índice en ambas listas para que sigan sincronizadas.
-
-## Decisión sobre productos repetidos
-
-No se permite registrar dos veces el mismo producto (sin distinguir mayúsculas de minúsculas). Así cada nombre tiene una sola cantidad y las listas paralelas se mantienen consistentes. Para cambiar la cantidad de un producto ya registrado se usa la opción 4.
-
-## Manejo de casos límite
-
-- Opciones de menú inexistentes muestran un mensaje claro.
-- Buscar, modificar o eliminar un producto que no existe muestra un aviso.
-- Inventario vacío muestra un aviso en lugar de fallar.
-- Las cantidades no numéricas o negativas se rechazan y se vuelven a pedir.
-
-## Autor
-
-Nombre completo y grupo del estudiante.
+se implementaron 4 funciones las cuales son: 1. opciones de menu que es el cuando el programa le pide al usuaripo que ingrese un digito numerico pero entero sino lo vuelve a pedir hasta que sea correcto, 2. actualizacion de producto el cual escoje primero el producto que deseas cambiar buscandolo por toda la lista y luego hace la accion pero sino existe salta un aviso, 3. resumen de invetario el cual muestra todo el inventarion  con los productos y cantidades pero si se ejecuta antes de haber ingresado algun dato salta un aviso, 4. opcion o dato correcto del producto asiendo que cuando se ingrese un dato o opcion numerico sea correcto, no una letra o un valor negativo.
